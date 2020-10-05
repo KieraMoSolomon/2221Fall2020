@@ -5,8 +5,9 @@ public class CharacterMover : MonoBehaviour
 {
     public Rigidbody rBody;
     private float moveSpeed;
-    public float walkSpeed = 10;
-    public float runSpeed = 35;
+    public float walkSpeed = 7;
+    public float runSpeed = 13;
+    public float rotateSpeed = 10;
     private float xMove, zMove;
     
     void Start()
