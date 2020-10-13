@@ -14,6 +14,6 @@ public class CharacterMover : MonoBehaviour
     
     void Update()
     {
-        movePattern.Movement(controller, transform);
+        movePattern.Move(controller, transform);
     }
 }

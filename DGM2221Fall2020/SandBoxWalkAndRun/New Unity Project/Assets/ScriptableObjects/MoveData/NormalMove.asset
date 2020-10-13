@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ed6e706f7c546308a1dcdd27529055, type: 3}
   m_Name: NormalMove
   m_EditorClassIdentifier: 
-  walkSpeed: {fileID: 0}
-  runSpeed: {fileID: 0}
-  jumpForce: {fileID: 0}
-  gravity: {fileID: 0}
-  rotateSpeed: {fileID: 0}
-  jumpCount: {fileID: 0}
-  jumpCountMax: {fileID: 0}
-  canJump: {fileID: 0}
-  yVar: 0
+  walkSpeed: {fileID: 11400000, guid: b054b73a82749450abedabc38010732d, type: 2}
+  runSpeed: {fileID: 11400000, guid: 18b5000df92824c8b8757af673637e69, type: 2}
+  jumpForce: {fileID: 11400000, guid: 731552deed0714eafb541377c2b6974e, type: 2}
+  gravity: {fileID: 11400000, guid: 5dc33e32a648547fa9e6835636752c4e, type: 2}
+  rotateSpeed: {fileID: 11400000, guid: 950baa24abe304a1ca582d23cd1343e4, type: 2}
+  jumpCount: {fileID: 11400000, guid: 08db516ca8c044b4c98115cc4c8d2f8d, type: 2}
+  jumpCountMax: {fileID: 11400000, guid: fc85204b0b240496c88242b697fa42c0, type: 2}
+  canJump: {fileID: 11400000, guid: d8eeac63022844ea7a080b548825b41e, type: 2}
+  yVar: -2689.008
