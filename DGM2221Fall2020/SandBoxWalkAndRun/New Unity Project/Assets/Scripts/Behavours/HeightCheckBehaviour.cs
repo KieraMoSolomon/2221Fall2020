@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HeightCheckBehaviour : MonoBehaviour
 {
-    public FloatData height;
+    public FloatData height, health;
     
     public void HeightCheck()
     {
@@ -17,6 +17,7 @@ public class HeightCheckBehaviour : MonoBehaviour
             gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
         //if too small change to red
+        health.value -= 1;
     }
 
     public void ReturnNormal()

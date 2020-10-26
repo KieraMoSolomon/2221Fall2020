@@ -764,6 +764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   height: {fileID: 11400000, guid: f59954206f66145989c42f36b4a113b6, type: 2}
+  health: {fileID: 11400000, guid: 135a61e4d5f354178824609e35baf9e9, type: 2}
 --- !u!114 &795919965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePattern: {fileID: 11400000, guid: fe0c3b9377b26457abd73220f56f0a3d, type: 2}
+  savePoint: {fileID: 11400000, guid: ae307bfb7994646b9a05662756fc0999, type: 2}
+  health: {fileID: 11400000, guid: 135a61e4d5f354178824609e35baf9e9, type: 2}
 --- !u!143 &1430018216
 CharacterController:
   m_ObjectHideFlags: 0
