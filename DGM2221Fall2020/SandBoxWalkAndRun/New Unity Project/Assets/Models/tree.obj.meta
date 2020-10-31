@@ -3,7 +3,17 @@ guid: 5ec750fbbc72c457f8a2925223de7389
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pCube21_treeMat
+    second: {fileID: 2100000, guid: 4b8eae4aa5743430ea50d26c9d5a38ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_pCylinder33Mat
+    second: {fileID: 2100000, guid: 75f99c028276245a7ba6afb588da4f9c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
