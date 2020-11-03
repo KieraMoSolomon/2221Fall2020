@@ -3,7 +3,12 @@ guid: d4a76439a606c4c4081840b71bda84cd
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pCylinder3_CarouselMat
+    second: {fileID: 2100000, guid: 3f411a6355bc8499cbb63b59a11ea779, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
