@@ -1,16 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class BlockFlyingBehaviour : MonoBehaviour
 {
-    public bool canUp, canDown;
-    public float minHeight;
+    public bool canUp =true, canDown = true;
+    public float moveSpeed = 3f, maxHeight = 10f, minHeight = -6.0f;
     
-    private Vector3 position, rotation;
-    public float moveSpeed = 3f, maxHeight = 5f;
     private CharacterController controller;
-
+    private Vector3 position, rotation;
+    
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -22,18 +20,23 @@ public class BlockFlyingBehaviour : MonoBehaviour
         {
             position.y = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
             canUp = true;
-            
+            controller.Move(position);
             if (position.y <= minHeight)
             {
                 canDown = false;
             }
         }
         
-        var limit = transform.position;
-        
-        position.y = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-        
-        controller.Move(position);
+        if (canUp && Input.GetKey(KeyCode.UpArrow))
+        {
+            position.y = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+            canDown = true;
+            controller.Move(position);
+            if (position.y >= maxHeight)
+            {
+                canUp = false;
+            }
+        }
     }
     
 }
