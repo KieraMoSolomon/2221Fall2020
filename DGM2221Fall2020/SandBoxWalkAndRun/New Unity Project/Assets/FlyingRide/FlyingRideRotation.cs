@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class FlyingRideRotation : MonoBehaviour
 {
-    private Vector3 rotation;
+    private Vector3 rotation, position;
     public float rotateSpeed = 12f;
+
+    public float risingSpeed = 5f;
     /*private CharacterController controller;
 
     private void Start()
@@ -21,6 +23,9 @@ public class FlyingRideRotation : MonoBehaviour
         
         rotation.y = rotateSpeed * Time.deltaTime;
         transform.Rotate(rotation);
-       // controller.Move(position);
+        
+        position.y = risingSpeed * Time.deltaTime;
+        position.Set(0, position.y, 0);
+        // controller.Move(position);
     }
 }

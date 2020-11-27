@@ -856,8 +856,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentPosition: {fileID: 11400000, guid: c4f64594707504688a73f4e191ade10a, type: 2}
   rotateSpeed: 120
-  gravity: -9.81
-  jumpForce: 20
+  gravity: -30
+  jumpForce: 35
   normalSpeed: {fileID: 11400000, guid: 950baa24abe304a1ca582d23cd1343e4, type: 2}
   fastSpeed: {fileID: 11400000, guid: 0b77fa171c53c4b69a3f38f0b1132636, type: 2}
   playerJumpCount: {fileID: 11400000, guid: fc85204b0b240496c88242b697fa42c0, type: 2}
@@ -950,7 +950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154957724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 560, y: 189, z: -1598.4}
+  m_LocalPosition: {x: 558, y: 189, z: -1703}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3722,7 +3722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &904911213
 Transform:
   m_ObjectHideFlags: 0
@@ -8018,6 +8018,39 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 55.484337, y: 19.041811, z: 39.465965}
   m_Center: {x: 21.23049, y: 9.020905, z: 24.528606}
+--- !u!114 &1438088617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438088615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae4edf85598f4ebfad934e058f02308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1438088618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438088615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4870a1477bd2146b5bedb6b1e600f870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshR: {fileID: 0}
+  default1: {fileID: 0}
+  transparentMat: {fileID: 0}
 --- !u!1001 &1455001637
 PrefabInstance:
   m_ObjectHideFlags: 0

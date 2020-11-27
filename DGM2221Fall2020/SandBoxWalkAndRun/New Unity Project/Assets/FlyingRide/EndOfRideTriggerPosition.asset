@@ -9,16 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d74510c4d7ad4c16b8c770fd52ffc51, type: 3}
-  m_Name: Health
+  m_Script: {fileID: 11500000, guid: e52eaed3798364ed5bdad4d586d8e0a2, type: 3}
+  m_Name: EndOfRideTriggerPosition
   m_EditorClassIdentifier: 
-  value: -1.1000001
-  setValueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  updateValueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  lessThanZeroEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  value: {x: 2.5, y: 0, z: -8.5}
