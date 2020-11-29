@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class FloatData : ScriptableObject
 {
     public float value;
-    public UnityEvent setValueEvent, updateValueEvent, lessThanZeroEvent;
+    public UnityEvent setValueEvent, updateValueEvent, playerLessThanZeroEvent;
 
     
     public void SetValue(float number)
@@ -19,7 +19,7 @@ public class FloatData : ScriptableObject
         value += number;
         updateValueEvent.Invoke();
     }
-
+    
     public void SetImageFillAmount(Image img)
     {
         if (value >= 0 || value <= 1)
@@ -29,7 +29,7 @@ public class FloatData : ScriptableObject
 
         if (value <= 0)
         {
-            lessThanZeroEvent.Invoke();
+            playerLessThanZeroEvent.Invoke();
         }
 
         if (value > 1)

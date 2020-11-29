@@ -16,15 +16,25 @@ public class InstancerSimpleBehaviour : MonoBehaviour
         wfs = new WaitForSeconds(holdTime);
     }
 
-    public IEnumerator Instance()
+    public void FireThisThing()
     {
         if (canShoot)
         {
+            Instance();
+        }
+    }
+
+    public void Instance()
+    {
             var location = transform.position;
             //var newObj = Instantiate(prefab);
             var newObj = Instantiate(prefab, location, Quaternion.Euler(this.rotationDirection.value));
-            canShoot = false;
-        }
+            StartCoroutine(HoldFire());
+    }
+
+    private IEnumerator HoldFire()
+    {
+        canShoot = false;
         yield return wfs;
         canShoot = true;
     }

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d74510c4d7ad4c16b8c770fd52ffc51, type: 3}
-  m_Name: Health
+  m_Name: TestHealth
   m_EditorClassIdentifier: 
-  value: 1
+  value: -0.30000007
   setValueEvent:
     m_PersistentCalls:
       m_Calls: []
