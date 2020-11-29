@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 226490667433871322}
   - component: {fileID: 4500328076704559903}
   - component: {fileID: 7418448755730971717}
+  - component: {fileID: -2651560643382334902}
   - component: {fileID: 4198609595756722736}
   - component: {fileID: -7352897036273255332}
   - component: {fileID: -3572789594810623757}
   - component: {fileID: -2438189932173152689}
-  m_Layer: 13
+  m_Layer: 15
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +100,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &-2651560643382334902
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8977635537018818510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3531494
+  m_Center: {x: -0.14685059, y: 0, z: 0}
 --- !u!54 &4198609595756722736
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -156,18 +170,6 @@ MonoBehaviour:
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: bbe118d4738f0421a8c9487e3e13a867, type: 2}
-        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
-        m_MethodName: UpdateValue
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -0.1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: -3572789594810623757}
         m_TargetAssemblyTypeName: SelfDestructBehaviour, Assembly-CSharp
         m_MethodName: TriggerSelfDestruct
@@ -180,6 +182,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SelfDestructBehaviour, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerStayEvent:
     m_PersistentCalls:
       m_Calls: []
