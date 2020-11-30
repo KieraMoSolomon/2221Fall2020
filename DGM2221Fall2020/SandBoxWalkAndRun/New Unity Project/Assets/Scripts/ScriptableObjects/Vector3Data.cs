@@ -26,7 +26,7 @@ public class Vector3Data : ScriptableObject
 
     public void SetFromMousePosition(Camera cam)
     {
-        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit, 100))
+        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit, 200))
         {
             value = hit.point;
         }

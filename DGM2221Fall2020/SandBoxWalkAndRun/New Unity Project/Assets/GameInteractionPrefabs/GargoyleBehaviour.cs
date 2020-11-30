@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class GargoyleBehaviour : MonoBehaviour
 {
-    //public FloatData health;
+    public float health = 8;
 
     public void UpdateHealth()
     {
         Debug.Log("update gargoyle health");
+        health -= 1;
     }
 }
