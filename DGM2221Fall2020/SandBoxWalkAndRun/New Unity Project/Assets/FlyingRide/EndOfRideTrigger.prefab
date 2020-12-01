@@ -111,8 +111,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerEnterEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3390803889166181930}
+        m_TargetAssemblyTypeName: SceneManagementBehaviour, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerStayEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &3390803889166181930
@@ -128,3 +143,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 0
+  height: {fileID: 11400000, guid: de0b398bf218b4dcd9f817c4d46a677e, type: 2}
+  continueHeight: {fileID: 11400000, guid: de0b398bf218b4dcd9f817c4d46a677e, type: 2}
