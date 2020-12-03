@@ -15,10 +15,9 @@ public class MousePositionLocatorBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit, 100, 14+17,QueryTriggerInteraction.Ignore))
+        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit, 100, 1<<18))
         {
             postionOfMouse.SetValueFromVector3(hit.point);
-            Debug.Log(LayerMask.GetMask("Enemy","EnemyZone"));
         }
     }
 }

@@ -182,8 +182,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1560674751497662114, guid: 2d4610e858ad64c329b356966d5003de, type: 3}
-        m_TargetAssemblyTypeName: GargoyleBehaviour, Assembly-CSharp
+      - m_Target: {fileID: 6982742452212409812, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
+        m_TargetAssemblyTypeName: EnemyBehaviour, Assembly-CSharp
         m_MethodName: UpdateHealth
         m_Mode: 1
         m_Arguments:
