@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &256433506 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6982742452212409812, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
-  m_PrefabInstance: {fileID: 408398681}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f483e4a5118f945828a7b0890837b167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &408398681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141,45 +130,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1873266050534472348, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1873266050534472348, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 256433506}
-    - target: {fileID: -1873266050534472348, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateHealth
-      objectReference: {fileID: 0}
-    - target: {fileID: -1873266050534472348, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1873266050534472348, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -1873266050534472348, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EnemyBehaviour, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: -1873266050534472348, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 2435925162879178565, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.8
+      value: -12.550096
       objectReference: {fileID: 0}
     - target: {fileID: 2435925162879178565, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 2435925162879178565, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.3
+      value: 22.378311
       objectReference: {fileID: 0}
     - target: {fileID: 2435925162879178565, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
       propertyPath: m_LocalRotation.x
@@ -392,7 +353,6 @@ GameObject:
   - component: {fileID: 766201260}
   - component: {fileID: 766201259}
   - component: {fileID: 766201258}
-  - component: {fileID: 766201256}
   m_Layer: 18
   m_Name: Plane
   m_TagString: Untagged
@@ -400,69 +360,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &766201256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766201255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7fcfa7a23de9461e8cca9151cdc7cf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseDownEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 4d99d6b98778f42c8bea94bbbbd39cbf, type: 2}
-        m_TargetAssemblyTypeName: Vector3Data, Assembly-CSharp
-        m_MethodName: SetFromMousePosition
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 963194227}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Camera, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1034346521}
-        m_TargetAssemblyTypeName: LookAtBehaviour, Assembly-CSharp
-        m_MethodName: OnLook
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 4d99d6b98778f42c8bea94bbbbd39cbf, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Vector3Data, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 7aadcc220674a46f9a74c848691eba8b, type: 2}
-        m_TargetAssemblyTypeName: Vector3Data, Assembly-CSharp
-        m_MethodName: SetValueFromRotation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1034346520}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1061927395}
-        m_TargetAssemblyTypeName: InstancerSimpleBehaviour, Assembly-CSharp
-        m_MethodName: FireThisThing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!64 &766201258
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -667,9 +564,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1034346519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fc6c7102b8784b40ae6a4c7d8dd6f38, type: 3}
+  m_Script: {fileID: 11500000, guid: 4787b6cfe854b405e88e75f23e2b03fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  postionOfMouse: {fileID: 11400000, guid: 1901fb53bff964694b49ac56b0e13e98, type: 2}
 --- !u!65 &1034346522
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -893,6 +791,88 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!1 &1400664818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1400664820}
+  - component: {fileID: 1400664819}
+  m_Layer: 0
+  m_Name: MouseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1400664819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400664818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 982874b1f57f8416b86ca5280722aa70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1034346521}
+        m_TargetAssemblyTypeName: FollowMouseBehaviour, Assembly-CSharp
+        m_MethodName: OnLook
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1901fb53bff964694b49ac56b0e13e98, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Vector3Data, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 7aadcc220674a46f9a74c848691eba8b, type: 2}
+        m_TargetAssemblyTypeName: Vector3Data, Assembly-CSharp
+        m_MethodName: SetValueFromRotation
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1034346520}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1061927395}
+        m_TargetAssemblyTypeName: InstancerSimpleBehaviour, Assembly-CSharp
+        m_MethodName: FireThisThing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1400664820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400664818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.9, y: 0.99, z: 19.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2000375822
 GameObject:
   m_ObjectHideFlags: 0

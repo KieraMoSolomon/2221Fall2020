@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2435925162879178571}
   - component: {fileID: 2435925162879178568}
   - component: {fileID: 6982742452212409812}
-  - component: {fileID: -1873266050534472348}
   m_Layer: 14
   m_Name: Gargolys
   m_TagString: Untagged
@@ -110,29 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f483e4a5118f945828a7b0890837b167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  individualHealth: -8
+  individualHealth: 0
   health: {fileID: 11400000, guid: d5a89a64c7ca44da1aa30c71e2d565a5, type: 2}
---- !u!114 &-1873266050534472348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2435925162879178569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae4edf85598f4ebfad934e058f02308, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerStayEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2435925162914607833
 GameObject:
   m_ObjectHideFlags: 0

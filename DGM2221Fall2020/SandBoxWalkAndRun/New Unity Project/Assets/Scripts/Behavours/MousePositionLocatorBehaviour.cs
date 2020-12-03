@@ -15,7 +15,7 @@ public class MousePositionLocatorBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit, 100, 1<<18))
+        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity, 1<<18))
         {
             postionOfMouse.SetValueFromVector3(hit.point);
         }
