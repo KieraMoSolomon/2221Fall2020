@@ -11,6 +11,7 @@ public class CameraBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        offsetCam.value = gameObject.transform.position - aimPoint.value;
         Vector3 newPos = aimPoint.value + offsetCam.value;
     }
 
