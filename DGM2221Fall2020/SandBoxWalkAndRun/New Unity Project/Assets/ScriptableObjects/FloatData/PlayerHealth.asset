@@ -12,13 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d74510c4d7ad4c16b8c770fd52ffc51, type: 3}
   m_Name: PlayerHealth
   m_EditorClassIdentifier: 
-  value: -0.7000001
+  value: -2.8999999
   setValueEvent:
     m_PersistentCalls:
       m_Calls: []
   updateValueEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 102900000, guid: 183b3c0f260e2b14b9acdedcf3da349d, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   playerLessThanZeroEvent:
     m_PersistentCalls:
       m_Calls: []
