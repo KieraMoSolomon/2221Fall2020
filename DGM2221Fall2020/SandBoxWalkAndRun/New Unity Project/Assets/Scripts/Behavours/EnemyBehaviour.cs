@@ -7,7 +7,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public float individualHealth;
     public FloatData health;
-    public FloatData speed;
+    //public FloatData speed;
     public bool canDash;
     public WaitForSeconds wfs;
     public float holdTime = 2f;
@@ -19,7 +19,6 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void UpdateHealth()
     {
-        Debug.Log("update gargoyle health");
         individualHealth -= 1;
         if (individualHealth <= 0)
         {

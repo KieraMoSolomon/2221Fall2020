@@ -25,19 +25,30 @@ public class AIBehaviour : MonoBehaviour
         StartCoroutine(Patrol());
     }
 
-    private IEnumerator OnTriggerEnter(Collider other)
+    public void InZone()
     {
+        StartCoroutine(Hunt());
+    }
+    private IEnumerator Hunt()
+    {
+        Debug.Log("why");
         canHunt = true;
         canPatrol = false;
+        /*this is for chain chop style!
         agent.destination = player.position;
-        var distance = agent.remainingDistance;
+        //var distance = agent.remainingDistance;
         while (distance <= 0.25f)
         {
-            distance = agent.remainingDistance;
+            //distance = agent.remainingDistance;
             yield return wffu;
+        }*/
+        while (canHunt)
+        {
+            yield return wffu;
+            agent.destination = player.position;
         }
-        yield return wfs;
-        StartCoroutine(canHunt ? OnTriggerEnter(other) : Patrol());
+        //yield return wfs;
+        //StartCoroutine(canHunt ? OnTriggerEnter(other) : Patrol());
     }
 
     private IEnumerator Patrol()
@@ -52,8 +63,9 @@ public class AIBehaviour : MonoBehaviour
         }
     }
     
-    private void OnTriggerExit(Collider other)
+    public void StopChase()
     {
         canHunt = false;
+        StartCoroutine(Patrol());
     }
 }

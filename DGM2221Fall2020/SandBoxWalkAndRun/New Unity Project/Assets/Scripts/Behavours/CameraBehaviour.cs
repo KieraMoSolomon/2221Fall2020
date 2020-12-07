@@ -11,7 +11,6 @@ public class CameraBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offsetCam.value = transform.position - aimPoint.value;
         Vector3 newPos = aimPoint.value + offsetCam.value;
     }
 
@@ -19,6 +18,6 @@ public class CameraBehaviour : MonoBehaviour
     void LateUpdate()
     {
         Vector3 newPos = aimPoint.value + offsetCam.value;
-        transform.position = Vector3.Slerp(transform.position, newPos, smoothFactor);
+        gameObject.transform.position = Vector3.Slerp(gameObject.transform.position, newPos, smoothFactor);
     }
 }

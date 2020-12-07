@@ -25,7 +25,7 @@ public class CharacterBehaviour : MonoBehaviour
     {
         moveSpeed = normalSpeed;
         controller = GetComponent<CharacterController>();
-        StartCoroutine(Move());
+        //StartCoroutine(Move());
     }
 
     private void OnDisable()
@@ -33,15 +33,15 @@ public class CharacterBehaviour : MonoBehaviour
         StopAllCoroutines();
     }
 
-    protected IEnumerator Move()
-    {
-        canMove = true;
-        while (canMove)
-        {
-            OnMove();
-            yield return wffu;
-        }
-    }
+    // protected IEnumerator Move()
+    // {
+    //     canMove = true;
+    //     while (canMove)
+    //     {
+    //         OnMove();
+    //         yield return wffu;
+    //     }
+    // }
     
     protected virtual void OnHorizontal()
     {
@@ -55,7 +55,7 @@ public class CharacterBehaviour : MonoBehaviour
         movement.Set(0,yVar,vInput);
     }
 
-    private void OnMove()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
