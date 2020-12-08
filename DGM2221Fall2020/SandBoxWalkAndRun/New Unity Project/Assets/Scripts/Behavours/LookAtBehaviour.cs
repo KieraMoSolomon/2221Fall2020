@@ -7,7 +7,6 @@ public class LookAtBehaviour : MonoBehaviour
 {
     public void OnLook(Vector3Data obj)
     {
-        Debug.Log("fix me");
         Transform transform1;
         (transform1 = transform).LookAt(obj.value);
         var transformRotation = transform1.eulerAngles;

@@ -37,7 +37,6 @@ public class SpawnRandomly : MonoBehaviour
     {
         for (int i = 0; i < spawnPoints.Length; i++)
         {
-            print("SPAWN");
             Instantiate(pickUps[0], spawnPoints[i].position, Quaternion.identity);
             yield return wfs;
         }
