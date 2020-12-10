@@ -31,7 +31,6 @@ public class AIBehaviour : MonoBehaviour
     }
     private IEnumerator Hunt()
     {
-        Debug.Log("why");
         canHunt = true;
         canPatrol = false;
         /*this is for chain chop style!
