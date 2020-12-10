@@ -17,7 +17,6 @@ public class TransparentBehaviour : MonoBehaviour
     public void TurnInvisible()
     {
         meshR.material = transparentMat;
-        Debug.Log("Working");
         //gColor.material.color = transparentMat;
     }
 
@@ -25,6 +24,5 @@ public class TransparentBehaviour : MonoBehaviour
     {
         //default1 = default1;
         meshR.material = default1;
-        Debug.Log("ExitWorking");
     }
 }
