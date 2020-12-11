@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gargolys
       objectReference: {fileID: 0}
+    - target: {fileID: 2435925162879178569, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2786272110403178309, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
       propertyPath: triggerStayEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -962,7 +966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124773211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.6, y: 0.99, z: -233}
+  m_LocalPosition: {x: 3, y: 0.99, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1034346520}
@@ -1216,6 +1220,10 @@ PrefabInstance:
     - target: {fileID: 2435925162879178569, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
       propertyPath: m_Name
       value: Gargolys (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435925162879178569, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2786272110403178309, guid: 4d94b7d1cdfa74227ba55772167cfdab, type: 3}
       propertyPath: triggerStayEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
