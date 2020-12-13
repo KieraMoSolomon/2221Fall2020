@@ -14,7 +14,7 @@ public class FollowMouseBehaviour : MonoBehaviour
 
     public void Update()
     {
-        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit, 5000))
+        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit, 100))
         {
             postionOfMouse.value = hit.point;
         }
