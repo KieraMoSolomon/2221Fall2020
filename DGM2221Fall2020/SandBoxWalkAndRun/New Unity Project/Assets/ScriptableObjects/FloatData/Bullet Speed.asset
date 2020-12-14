@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d74510c4d7ad4c16b8c770fd52ffc51, type: 3}
   m_Name: Bullet Speed
   m_EditorClassIdentifier: 
-  value: 2000
+  value: 500
   setValueEvent:
     m_PersistentCalls:
       m_Calls: []
