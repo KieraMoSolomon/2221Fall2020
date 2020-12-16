@@ -28,13 +28,15 @@ public class DragonMovement : MonoBehaviour
     {
         if (transform.position != targetPosition && canDash)
         {
-            transform.position += targetPosition * (speed * Time.deltaTime);
-            Debug.Log(targetPosition);
+            rBody.velocity = (targetPosition - transform.position).normalized * speed;
+            //transform.position -= targetPosition * (speed * Time.deltaTime);
+            //Debug.Log(targetPosition);
         }
 
         if (transform.position != defaultPos && canDash == false)
         {
-            transform.position += defaultPos * (Time.deltaTime * speed);
+            rBody.velocity = (defaultPos - transform.position).normalized * speed;
+            //transform.position += defaultPos * (Time.deltaTime * speed);
         }
     }
 
