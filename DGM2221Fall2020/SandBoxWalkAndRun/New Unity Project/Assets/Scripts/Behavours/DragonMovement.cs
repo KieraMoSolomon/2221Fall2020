@@ -34,17 +34,13 @@ public class DragonMovement : MonoBehaviour
     {
         canDash = false;
         //controller.Move(playerPos.value * (speed * Time.deltaTime));
-        while (transform.position != playerPos.value)
-        {
-            rBody.velocity = (playerPos.value - defaultPos).normalized *speed;
-        }
+        rBody.velocity = (playerPos.value - defaultPos).normalized *speed;
+        if(playerPos.value == dragonToPlayer)
          yield return wfs;
-         while (transform.position != defaultPos)
-         {
-             rBody.velocity = (defaultPos - transform.position).normalized * speed;
-         }
-
-         canDash = true;
+        rBody.velocity = (defaultPos - transform.position).normalized * speed;
+        if (transform.position == defaultPos)
+            yield break;
+            canDash = true;
         //controller.Move(defaultPos * (speed * Time.deltaTime));
         //rBody.MovePosition(defaultPos *(speed *Time.deltaTime));
         Debug.Log("Please Work");
