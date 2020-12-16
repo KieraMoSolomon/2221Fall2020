@@ -2,63 +2,72 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(NavMeshAgent))]
 //[RequireComponent(typeof(CharacterController))]
 public class DragonMovement : MonoBehaviour
 {
-    public Rigidbody rBody;
-    //public CharacterController controller;
     public Vector3Data playerPos;
-    public Vector3 defaultPos, dragonToPlayer, targetPosition;
-    public bool canDash;
+    private bool isOut, canPatrol;
+    private NavMeshAgent agent;
+    private WaitForFixedUpdate wffu;
     private WaitForSeconds wfs;
+
     public float holdTime = 2f;
-    public float speed = 10f;
-    public float distFloat;
-    public void Start()
+    //public Transform player;
+    
+    public List<Transform> patrolPoints;
+    private int i = 0;
+    private void Start()
     {
         wfs = new WaitForSeconds(holdTime);
-        rBody = GetComponent<Rigidbody>();
-        //controller = GetComponent<CharacterController>();
-        defaultPos = transform.position;
+        wffu = new WaitForFixedUpdate();
+        agent = GetComponent<NavMeshAgent>();
+        StartCoroutine(Waiting());
     }
 
-    public void Update()
+    public void InZone()
     {
-        if (transform.position != targetPosition && canDash)
+        StartCoroutine(StartChase());
+    }
+    private IEnumerator StartChase()
+    {
+        isOut = true;
+        canPatrol = false;
+        /*this is for chain chop style!
+        agent.destination = player.position;
+        //var distance = agent.remainingDistance;
+        while (distance <= 0.25f)
         {
-            rBody.velocity = (transform.position - targetPosition).normalized * speed;
-            //transform.position -= targetPosition * (speed * Time.deltaTime);
-            //Debug.Log(targetPosition);
-        }
-
-        if (transform.position != defaultPos && canDash == false)
+            //distance = agent.remainingDistance;
+            yield return wffu;
+        }*/
+        if (isOut)
         {
-            rBody.velocity = (defaultPos - transform.position).normalized * speed;
-            //transform.position += defaultPos * (Time.deltaTime * speed);
+            yield return wffu;
+            agent.destination = playerPos.value;
+        }
+        yield return wfs;
+        StartCoroutine(Waiting());
+        //StartCoroutine(canHunt ? OnTriggerEnter(other) : Patrol());
+    }
+
+    private IEnumerator Waiting()
+    {
+        canPatrol = true;
+        while (canPatrol)
+        {
+            yield return wffu;
+            if (agent.pathPending || !(agent.remainingDistance < 0.5f)) continue;
+            agent.destination = patrolPoints[i].position;
+            i = (i + 1) % patrolPoints.Count;
         }
     }
-
-    public void DragonDash()
+    
+    public void StopChase()
     {
-        targetPosition = playerPos.value;
-        Debug.Log(targetPosition);
-        StartCoroutine(Dash());
-    }
-
-    private IEnumerator Dash()
-    {
-        canDash = true;
-        yield return wfs;
-        canDash = false;
-        StartCoroutine(DashHold());
-    }
-
-    private IEnumerator DashHold()
-    {
-        canDash = false;
-        yield return wfs;
-        canDash = true;
+        isOut = false;
+        StartCoroutine(Waiting());
     }
 }
