@@ -17,7 +17,7 @@ public class InstancerBehaviour : MonoBehaviour
 
     public void WhyYouNoWork()
     {
-        Debug.Log("why");
+        
     }
     public void Instance()
     {

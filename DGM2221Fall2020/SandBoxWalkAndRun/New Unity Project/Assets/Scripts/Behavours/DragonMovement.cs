@@ -45,9 +45,10 @@ public class DragonMovement : MonoBehaviour
         }*/
         if (isOut)
         {
-            yield return wffu;
             agent.destination = playerPos.value;
         }
+
+        isOut = false;
         yield return wfs;
         StartCoroutine(Waiting());
         //StartCoroutine(canHunt ? OnTriggerEnter(other) : Patrol());
@@ -56,13 +57,18 @@ public class DragonMovement : MonoBehaviour
     private IEnumerator Waiting()
     {
         canPatrol = true;
-        while (canPatrol)
+        if (canPatrol)
         {
-            yield return wffu;
-            if (agent.pathPending || !(agent.remainingDistance < 0.5f)) continue;
-            agent.destination = patrolPoints[i].position;
-            i = (i + 1) % patrolPoints.Count;
+            // if (agent.pathPending || !(agent.remainingDistance < 0.5f))
+            // {
+                agent.destination = patrolPoints[i].position;
+                i = (i + 1) % patrolPoints.Count;
+            //}
+
+            canPatrol = false;
         }
+        yield return wfs;
+        StartCoroutine(StartChase());
     }
     
     public void StopChase()

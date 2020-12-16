@@ -16,7 +16,17 @@ public class ClearedAreaCheck : MonoBehaviour
         }
         else
         {
-            text.text = clear.stringList[0];
+            OnTrigTextUpdate();
         }
+    }
+
+    private void OnTrigTextUpdate()
+    {
+        text.text = clear.stringList[0];
+    }
+
+    public void OnTrigExitTextUpdate()
+    {
+        text.text = clear.stringList[1];
     }
 }

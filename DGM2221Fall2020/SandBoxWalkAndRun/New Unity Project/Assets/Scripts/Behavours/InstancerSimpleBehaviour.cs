@@ -16,6 +16,10 @@ public class InstancerSimpleBehaviour : MonoBehaviour
         wfs = new WaitForSeconds(holdTime);
     }
 
+    public void ResetShooting()
+    {
+        canShoot = true;
+    }
     public void FireThisThing()
     {
         if (canShoot)
