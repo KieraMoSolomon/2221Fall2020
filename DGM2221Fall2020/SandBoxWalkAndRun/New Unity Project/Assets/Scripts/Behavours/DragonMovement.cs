@@ -9,7 +9,8 @@ using UnityEngine.AI;
 public class DragonMovement : MonoBehaviour
 {
     public Vector3Data playerPos;
-    private bool isOut, canPatrol;
+    private bool isDiving, canPatrol;
+    public bool canDive = true;
     private NavMeshAgent agent;
     private WaitForFixedUpdate wffu;
     private WaitForSeconds wfs;
@@ -24,17 +25,22 @@ public class DragonMovement : MonoBehaviour
         wfs = new WaitForSeconds(holdTime);
         wffu = new WaitForFixedUpdate();
         agent = GetComponent<NavMeshAgent>();
-        StartCoroutine(Waiting());
+        canDive = true;
     }
 
     public void InZone()
     {
-        StartCoroutine(StartChase());
+        if (canDive)
+        {
+            StartCoroutine(StartChase());
+        }
     }
+
     private IEnumerator StartChase()
     {
-        isOut = true;
+        isDiving = true;
         canPatrol = false;
+        canDive = false;
         /*this is for chain chop style!
         agent.destination = player.position;
         //var distance = agent.remainingDistance;
@@ -43,12 +49,12 @@ public class DragonMovement : MonoBehaviour
             //distance = agent.remainingDistance;
             yield return wffu;
         }*/
-        if (isOut)
+        if (isDiving)
         {
             agent.destination = playerPos.value;
         }
 
-        isOut = false;
+        isDiving = false;
         yield return wfs;
         StartCoroutine(Waiting());
         //StartCoroutine(canHunt ? OnTriggerEnter(other) : Patrol());
@@ -68,12 +74,12 @@ public class DragonMovement : MonoBehaviour
             canPatrol = false;
         }
         yield return wfs;
-        StartCoroutine(StartChase());
+        canDive = true;
     }
     
     public void StopChase()
     {
-        isOut = false;
+        isDiving = false;
         StartCoroutine(Waiting());
     }
 }

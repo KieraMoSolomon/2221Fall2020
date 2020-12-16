@@ -1491,7 +1491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 147
+      value: 148
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6498,7 +6498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c53452be970b4f9483b4fed8879b001, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c53452be970b4f9483b4fed8879b001, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6861,12 +6861,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245089877}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.39395574, z: -0, w: -0.91912943}
+  m_LocalPosition: {x: 143.9, y: 14.04, z: -97.6}
+  m_LocalScale: {x: 9.470617, y: 9.470619, z: 9.470617}
   m_Children: []
-  m_Father: {fileID: 517541890}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 146
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &245089879
 MonoBehaviour:
@@ -7485,7 +7485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -7561,6 +7561,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1568013525}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
@@ -10225,7 +10249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -10330,6 +10354,30 @@ PrefabInstance:
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1610758012}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11234,7 +11282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 51
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12095,9 +12143,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPos: {fileID: 11400000, guid: 689c3f4726d50486f960ea2c8edcdbaa, type: 2}
-  holdTime: 2
+  canDive: 1
+  holdTime: 5
   patrolPoints:
-  - {fileID: 966644750}
+  - {fileID: 712844253}
 --- !u!195 &517541886
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12108,8 +12157,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.49999997
-  m_Speed: 10
-  m_Acceleration: 8
+  m_Speed: 50
+  m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -12189,14 +12238,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517541884}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 187.4, y: 14.04, z: -111.2}
-  m_LocalScale: {x: 9.470619, y: 9.470619, z: 9.470619}
-  m_Children:
-  - {fileID: 245089878}
+  m_LocalRotation: {x: -0, y: 0.39395574, z: -0, w: -0.91912943}
+  m_LocalPosition: {x: 162.38184, y: 14.04, z: -69.95086}
+  m_LocalScale: {x: 9.470617, y: 9.470619, z: 9.470617}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 145
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 172.987, z: 0}
 --- !u!114 &517541891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12691,7 +12739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -12767,6 +12815,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1344260047}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
@@ -15384,7 +15456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 153
+      value: 154
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16097,7 +16169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 159
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16681,6 +16753,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &712844252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 712844253}
+  m_Layer: 14
+  m_Name: WaitPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &712844253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712844252}
+  m_LocalRotation: {x: -0, y: 0.39395574, z: -0, w: -0.91912943}
+  m_LocalPosition: {x: 162.38184, y: 14.04, z: -69.95086}
+  m_LocalScale: {x: 9.470617, y: 9.470619, z: 9.470617}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 144
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &723846393
 GameObject:
@@ -19980,7 +20082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -20056,6 +20158,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 307591189}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
@@ -21606,7 +21732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 146
+      value: 147
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -21908,36 +22034,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1154.0582, y: 245.83867, z: 1129.2026}
   m_Center: {x: -89.74, y: -5.251148, z: 354.2593}
---- !u!1 &966644749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 966644750}
-  m_Layer: 0
-  m_Name: WaitingPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &966644750
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966644749}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 187.4, y: 14.04, z: -111.2}
-  m_LocalScale: {x: 9.470619, y: 9.470619, z: 9.470619}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 143
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &968760213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22892,7 +22988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 154
+      value: 155
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -31716,7 +31812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 156
+      value: 157
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32135,7 +32231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 151
+      value: 152
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32482,10 +32578,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -34384,7 +34480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 148
+      value: 149
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -36864,13 +36960,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529847437}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 187.9, y: 15.2, z: -126.8}
-  m_LocalScale: {x: 19.307129, y: 19.307129, z: 19.307129}
+  m_LocalRotation: {x: -0, y: -0.9819667, z: -0, w: 0.18905434}
+  m_LocalPosition: {x: 146.7511, y: 15.2, z: -58.07464}
+  m_LocalScale: {x: 19.307129, y: 19.307127, z: 19.307129}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 144
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 143
+  m_LocalEulerAnglesHint: {x: 0, y: 248.19699, z: 0}
 --- !u!1001 &1536348807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38707,7 +38803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 150
+      value: 151
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -39524,7 +39620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -39604,6 +39700,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1061705448}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
@@ -40665,7 +40785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 155
+      value: 156
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -42410,7 +42530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 152
+      value: 153
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -42745,7 +42865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -42821,6 +42941,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1073349954}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
@@ -43832,7 +43976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -43908,6 +44052,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 170036249}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
@@ -45104,7 +45272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 149
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -45711,6 +45879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1953143511}
   - component: {fileID: 1953143510}
+  - component: {fileID: 1953143512}
   m_Layer: 16
   m_Name: InstancePoint
   m_TagString: Untagged
@@ -45732,7 +45901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8977635537018818510, guid: 5ebf773855b834398a969e61df531044, type: 3}
   rotationDirection: {fileID: 11400000, guid: 7aadcc220674a46f9a74c848691eba8b, type: 2}
-  holdTime: 1
+  holdTime: 0.5
   canShoot: 1
 --- !u!4 &1953143511
 Transform:
@@ -45748,6 +45917,35 @@ Transform:
   m_Father: {fileID: 1577824225}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1953143512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953143509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c870e5d7cb5406fab1d6fb32dd7688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameAction: {fileID: 11400000, guid: 2147aa11b728f4fee9c02346370e131f, type: 2}
+  handlerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1953143510}
+        m_TargetAssemblyTypeName: InstancerSimpleBehaviour, Assembly-CSharp
+        m_MethodName: ResetShooting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  holdTime: 0
 --- !u!1 &1953513093 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1433247482972067673, guid: 5ec750fbbc72c457f8a2925223de7389, type: 3}
@@ -46046,7 +46244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -46122,6 +46320,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2094981628}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
@@ -47479,7 +47701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 158
+      value: 159
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -48564,7 +48786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_RootOrder
-      value: 157
+      value: 158
       objectReference: {fileID: 0}
     - target: {fileID: 5740659877095313272, guid: 31989f5dbbb3e4bca91d7a8ed7822c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -50259,7 +50481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerStayEvent.m_PersistentCalls.m_Calls.Array.size
@@ -50367,6 +50589,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
       propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ClearedAreaCheck, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 505243566}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnTrigExitTextUpdate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962157365315781851, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
+      propertyPath: triggerExitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3962157365315781852, guid: 96db0ff08eb494b7a903bb170dc75567, type: 3}
@@ -50715,7 +50961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5540051691698343141, guid: f263257c876784232ba057990b59a1f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.003407
+      value: -19.4
       objectReference: {fileID: 0}
     - target: {fileID: 5540051691698343141, guid: f263257c876784232ba057990b59a1f7, type: 3}
       propertyPath: m_LocalPosition.z
