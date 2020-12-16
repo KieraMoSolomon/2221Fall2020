@@ -26,35 +26,30 @@ public class DragonMovement : MonoBehaviour
 
     public void Update()
     {
-        
+        if (canDash)
+        {
+            targetPosition = playerPos.value;
+            distFloat = Vector3.Distance(defaultPos, targetPosition);
+            if (distFloat <= 2f)
+            {
+                transform.position += defaultPos * (speed * Time.deltaTime);
+            }
+            else
+            {
+                transform.position += targetPosition * (speed * Time.deltaTime);
+            }
+        }
     }
 
     public void DragonDash()
     {
-        if (canDash)
-        {
-            StartCoroutine(Dash());
-        }
+        StartCoroutine(Dash());
     }
 
     private IEnumerator Dash()
     {
-        distFloat = Vector3.Distance(defaultPos, playerPos.value);
-        Debug.Log(distFloat);
         canDash = false;
-        while (distFloat >= 2f)
-        {
-            transform.position += playerPos.value *(Time.deltaTime *speed);
-            distFloat = Vector3.Distance(transform.position, playerPos.value);
-            Debug.Log(distFloat);
-        }
-        //controller.Move(playerPos.value * (speed * Time.deltaTime));
-       // transform.position += transform.forward * (Time.deltaTime *speed);
         yield return wfs;
         canDash = true;
-        yield break;
-        //controller.Move(defaultPos * (speed * Time.deltaTime));
-        //rBody.MovePosition(defaultPos *(speed *Time.deltaTime));
-        Debug.Log("Please Work");
     }
 }
