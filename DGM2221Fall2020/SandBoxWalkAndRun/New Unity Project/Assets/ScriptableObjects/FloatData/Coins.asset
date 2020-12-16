@@ -12,13 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d74510c4d7ad4c16b8c770fd52ffc51, type: 3}
   m_Name: Coins
   m_EditorClassIdentifier: 
-  value: 0
+  value: 3
   setValueEvent:
     m_PersistentCalls:
       m_Calls: []
   updateValueEvent:
     m_PersistentCalls:
-      m_Calls: []
-  lessThanZeroEvent:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 9a1ba7de621dc42c0badf751e2226019, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  playerLessThanZeroEvent:
     m_PersistentCalls:
       m_Calls: []
