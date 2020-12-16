@@ -28,7 +28,7 @@ public class DragonMovement : MonoBehaviour
     {
         if (transform.position != targetPosition && canDash)
         {
-            rBody.velocity = (targetPosition - transform.position).normalized * speed;
+            rBody.velocity = (transform.position - targetPosition).normalized * speed;
             //transform.position -= targetPosition * (speed * Time.deltaTime);
             //Debug.Log(targetPosition);
         }
@@ -43,6 +43,7 @@ public class DragonMovement : MonoBehaviour
     public void DragonDash()
     {
         targetPosition = playerPos.value;
+        Debug.Log(targetPosition);
         StartCoroutine(Dash());
     }
 
