@@ -15,6 +15,7 @@ public class DragonMovement : MonoBehaviour
     private WaitForSeconds wfs;
     public float holdTime = 2f;
     public float speed = 10f;
+    public float distFloat;
     public void Start()
     {
         wfs = new WaitForSeconds(holdTime);
@@ -25,10 +26,7 @@ public class DragonMovement : MonoBehaviour
 
     public void Update()
     {
-        if (transform.position != playerPos.value && canDash)
-        {
-            transform.position += transform.forward * (speed * Time.deltaTime);
-        }
+        
     }
 
     public void DragonDash()
@@ -41,11 +39,15 @@ public class DragonMovement : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        targetPosition = playerPos.value;
-        canDash = true;
-        yield return wfs;
+        distFloat = Vector3.Distance(defaultPos, playerPos.value);
+        Debug.Log(distFloat);
         canDash = false;
-        transform.position = defaultPos;
+        while (distFloat >= 2f)
+        {
+            transform.position += playerPos.value *(Time.deltaTime *speed);
+            distFloat = Vector3.Distance(defaultPos, playerPos.value);
+            Debug.Log(distFloat);
+        }
         //controller.Move(playerPos.value * (speed * Time.deltaTime));
        // transform.position += transform.forward * (Time.deltaTime *speed);
         yield return wfs;
