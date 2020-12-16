@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d74510c4d7ad4c16b8c770fd52ffc51, type: 3}
   m_Name: Area4Max
   m_EditorClassIdentifier: 
-  value: 9
+  value: 10
   setValueEvent:
     m_PersistentCalls:
       m_Calls: []
