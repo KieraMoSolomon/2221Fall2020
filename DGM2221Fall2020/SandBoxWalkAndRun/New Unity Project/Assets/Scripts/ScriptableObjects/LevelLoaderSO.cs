@@ -8,6 +8,6 @@ public class LevelLoaderSO : ScriptableObject
 {
     public void Load(string level)
     {
-        SceneManager.LoadScene(level, LoadSceneMode.Additive);
+        SceneManager.LoadScene(level);
     }
 }

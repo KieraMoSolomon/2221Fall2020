@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2dc414b7b5a7f45d0930b991990b9b46
+  - enabled: 1
     path: Assets/Scenes/Environment.unity
     guid: d42a6405311ff4f3b95a729e41ab8cf8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FlyingRide.unity
     guid: f267b83176f1f4690ac55cb57d8327e3
   m_configObjects: {}

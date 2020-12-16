@@ -152,3 +152,6 @@ MonoBehaviour:
   triggerExitEvent:
     m_PersistentCalls:
       m_Calls: []
+  triggerStayEvent:
+    m_PersistentCalls:
+      m_Calls: []

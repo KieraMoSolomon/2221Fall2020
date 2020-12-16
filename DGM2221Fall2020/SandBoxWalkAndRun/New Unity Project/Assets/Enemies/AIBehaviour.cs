@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -57,8 +58,8 @@ public class AIBehaviour : MonoBehaviour
         {
             yield return wffu;
             if (agent.pathPending || !(agent.remainingDistance < 0.5f)) continue;
-            agent.destination = patrolPoints[i].position;
-            i = (i + 1) % patrolPoints.Count;
+                agent.destination = patrolPoints[i].position;
+                i = (i + 1) % patrolPoints.Count;
         }
     }
     

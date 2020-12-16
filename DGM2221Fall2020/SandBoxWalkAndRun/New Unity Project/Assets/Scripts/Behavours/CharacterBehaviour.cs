@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterBehaviour : MonoBehaviour
 {
-    public Vector3Data currentPosition;
     public float rotateSpeed = 120f, gravity = -9.81f, jumpForce = 10f;
     public FloatData normalSpeed, fastSpeed;
     public IntData playerJumpCount;
@@ -16,12 +15,14 @@ public class CharacterBehaviour : MonoBehaviour
     protected readonly WaitForFixedUpdate wffu = new WaitForFixedUpdate();
     protected float vInput, hInput;
     protected FloatData moveSpeed;
+    public Vector3Data spawnPoint;
     
     protected float yVar;
     private int jumpCount;
 
     private void OnEnable()
     {
+        transform.position = spawnPoint.value;
         moveSpeed = normalSpeed;
         controller = GetComponent<CharacterController>();
         //StartCoroutine(Move());
@@ -83,7 +84,6 @@ public class CharacterBehaviour : MonoBehaviour
             jumpCount++;
         }
 
-        currentPosition.value = transform.position;
         movement = transform.TransformDirection(movement);
         controller.Move((movement) * Time.deltaTime);
     }

@@ -180,8 +180,8 @@ GameObject:
   - component: {fileID: 5587266057499486423}
   - component: {fileID: 5587266057499486422}
   - component: {fileID: 5587266057499486409}
-  - component: {fileID: 5587266057499486418}
   - component: {fileID: 6548602791091497254}
+  - component: {fileID: 5587266057499486418}
   - component: {fileID: 5587266057499486421}
   - component: {fileID: 6548602791091497255}
   m_Layer: 13
@@ -269,22 +269,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5587266057499486418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5587266057499486408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f483e4a5118f945828a7b0890837b167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  individualHealth: 0
-  health: {fileID: 11400000, guid: 3c785b09d6af24e8f8b710eb0b73c8f5, type: 2}
-  canDash: 0
-  holdTime: 2
 --- !u!114 &6548602791091497254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +290,22 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &5587266057499486418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587266057499486408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f483e4a5118f945828a7b0890837b167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  individualHealth: 0
+  health: {fileID: 11400000, guid: 3c785b09d6af24e8f8b710eb0b73c8f5, type: 2}
+  canDash: 0
+  holdTime: 2
 --- !u!114 &5587266057499486421
 MonoBehaviour:
   m_ObjectHideFlags: 0
