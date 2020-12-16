@@ -45,7 +45,7 @@ public class DragonMovement : MonoBehaviour
         while (distFloat >= 2f)
         {
             transform.position += playerPos.value *(Time.deltaTime *speed);
-            distFloat = Vector3.Distance(defaultPos, playerPos.value);
+            distFloat = Vector3.Distance(transform.position, playerPos.value);
             Debug.Log(distFloat);
         }
         //controller.Move(playerPos.value * (speed * Time.deltaTime));
