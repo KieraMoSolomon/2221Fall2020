@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52eaed3798364ed5bdad4d586d8e0a2, type: 3}
-  m_Name: RespawnPosition
+  m_Name: StartSpawn
   m_EditorClassIdentifier: 
-  value: {x: 41.2, y: 7.200001, z: -6.77}
+  value: {x: 34.328, y: 7.791901, z: -144.403}

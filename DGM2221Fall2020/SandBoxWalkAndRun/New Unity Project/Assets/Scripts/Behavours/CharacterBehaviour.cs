@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,14 +16,18 @@ public class CharacterBehaviour : MonoBehaviour
     protected readonly WaitForFixedUpdate wffu = new WaitForFixedUpdate();
     protected float vInput, hInput;
     protected FloatData moveSpeed;
-    public Vector3Data spawnPoint;
+    public Vector3Data startPoint, currentSpawn;
     
     protected float yVar;
     private int jumpCount;
 
+    private void Start()
+    {
+        currentSpawn.value = startPoint.value;
+    }
+    
     private void OnEnable()
     {
-        transform.position = spawnPoint.value;
         moveSpeed = normalSpeed;
         controller = GetComponent<CharacterController>();
         //StartCoroutine(Move());

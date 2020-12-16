@@ -31,7 +31,7 @@ public class RespawnBehaviour : MonoBehaviour
     }*/
     public void SendToRespawn()
     {
-        StartCoroutine(Respawn());
+        player.transform.position = savePoint.value;
     }
 
     private IEnumerator Respawn()
