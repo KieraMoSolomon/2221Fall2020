@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Environment.unity
     guid: d42a6405311ff4f3b95a729e41ab8cf8
+  - enabled: 1
+    path: Assets/Scenes/GameEnd.unity
+    guid: 4d357073e2bb44dd890a5016fc113dd1
   - enabled: 0
     path: Assets/Scenes/FlyingRide.unity
     guid: f267b83176f1f4690ac55cb57d8327e3
